@@ -2,7 +2,7 @@ secure-password
 ===============
 
 Small library to store a secure hash of your users' passwords.
-It uses the [Bcrypt][bcrypt-ruby] password hashing algorithm.
+It uses the [Bcrypt][bcrypt] password hashing algorithm.
 
 Usage
 -----
@@ -60,5 +60,5 @@ Installation
 $ gem install secure-password
 ```
 
+[bcrypt]: https://github.com/codahale/bcrypt-ruby
 [scrivener]: https://github.com/soveran/scrivener
-[bcrypt-ruby]: https://github.com/codahale/bcrypt-ruby
