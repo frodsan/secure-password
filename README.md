@@ -1,8 +1,8 @@
 secure-password
 ===============
 
-Small library to store a secure hash of your users' passwords.
-It uses the [Bcrypt][bcrypt] password hashing algorithm.
+Set and authenticate against [bcrypt][bcrypt] passwords.
+It uses the [bcrypt-ruby][bcrypt-ruby] gem.
 
 Usage
 -----
@@ -53,6 +53,28 @@ if signup.valid?
 end
 ```
 
+Bcrypt's cost factor
+--------------------
+
+The default cost factor used by `BCrypt` is `10`. To change it, use:
+
+```ruby
+BCrypt::Engine.cost = 12
+```
+
+Check ["Cost Factors"][cost-factors] section for more information.
+
+Testing
+-------
+
+bcrypt is designed to be slow to make cracking exponentially difficult.
+However, tests don't need this security measures. To speed up your tests,
+you can decrease the default cost factor to the minimum:
+
+```ruby
+BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
+```
+
 Installation
 ------------
 
@@ -60,5 +82,7 @@ Installation
 $ gem install secure-password
 ```
 
-[bcrypt]: https://github.com/codahale/bcrypt-ruby
+[bcrypt]: http://www.openbsd.org/papers/bcrypt-paper.pdf
+[bcrypt-ruby]: https://github.com/codahale/bcrypt-ruby
+[cost-factors]: https://github.com/codahale/bcrypt-ruby#cost-factors
 [scrivener]: https://github.com/soveran/scrivener
