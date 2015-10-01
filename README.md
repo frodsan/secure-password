@@ -75,6 +75,14 @@ you can decrease the default cost factor to the minimum:
 BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
 ```
 
+Contributing
+------------
+
+- Fork the project.
+- Use `make install` to install dependencies.
+- Use `make test` to run the test suite.
+- Create a pull request with your changes.
+
 Installation
 ------------
 
