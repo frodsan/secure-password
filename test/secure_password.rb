@@ -8,6 +8,8 @@ class User
   attr_accessor :password_digest
 end
 
+BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
+
 test "sets hashed password" do
   user = User.new
   user.password = "123456"
