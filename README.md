@@ -1,8 +1,29 @@
-secure-password
-===============
+SecurePassword [![Build Status](https://travis-ci.org/frodsan/secure-password.svg)](https://travis-ci.org/frodsan/secure-password)
+==============
 
 Set and authenticate against [bcrypt][bcrypt] passwords.
 It uses the [bcrypt-ruby][bcrypt-ruby] gem.
+
+Installation
+------------
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem "secure-password"
+```
+
+And then execute:
+
+```
+$ bundle
+```
+
+Or install it yourself as:
+
+```
+$ gem install secure-password
+```
 
 Usage
 -----
@@ -78,19 +99,34 @@ BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
 Contributing
 ------------
 
-- Fork the project.
-- Use `make install` to install dependencies.
-- Use `make test` to run the test suite.
-- Create a pull request with your changes.
-
-Installation
-------------
+Fork the project with:
 
 ```
-$ gem install secure-password
+$ git clone git@github.com:frodsan/secure-password.git
 ```
+
+To install dependencies, use:
+
+```
+$ bundle install
+```
+
+To run the test suite, do:
+
+```
+$ rake test
+```
+
+For bug reports and pull requests use [GitHub][issues].
+
+License
+-------
+
+SecurePassword is released under the [MIT License][mit].
 
 [bcrypt]: http://www.openbsd.org/papers/bcrypt-paper.pdf
 [bcrypt-ruby]: https://github.com/codahale/bcrypt-ruby
 [cost-factors]: https://github.com/codahale/bcrypt-ruby#cost-factors
+[mit]: http://www.opensource.org/licenses/MIT
+[issues]: https://github.com/frodsan/secure-password/issues
 [scrivener]: https://github.com/soveran/scrivener
