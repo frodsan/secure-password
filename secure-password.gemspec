@@ -1,15 +1,18 @@
 Gem::Specification.new do |s|
   s.name        = "secure-password"
   s.version     = "1.0.0"
-  s.summary     = "Securing your users' passwords."
+  s.summary     = "Securing your users' passwords"
   s.description = s.summary
-  s.authors     = ["Francesco Rodríguez"]
-  s.email       = ["frodsan@protonmail.ch"]
-  s.homepage    = "https://github.com/harmoni/secure-password"
+  s.author      = "Francesco Rodríguez"
+  s.email       = "frodsan@protonmail.ch"
+  s.homepage    = "https://github.com/frodsan/secure-password"
   s.license     = "MIT"
 
-  s.files = `git ls-files`.split("\n")
+  s.files      = Dir["LICENSE", "README.md", "lib/**/*.rb"]
+  s.test_files = Dir["test/**/*.rb"]
 
   s.add_dependency "bcrypt", "~> 3.1"
-  s.add_development_dependency "cutest", "~> 1.2"
+  s.add_development_dependency "minitest", "~> 5.8"
+  s.add_development_dependency "minitest-sugar", "~> 2.1"
+  s.add_development_dependency "rake", "~> 10.0"
 end
