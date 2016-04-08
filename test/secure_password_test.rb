@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "bundler/setup"
 require "minitest/autorun"
 require "minitest/pride"
@@ -31,6 +33,6 @@ class SecurePasswordTest < Minitest::Test
     user = User.new
     user.password = "123456"
 
-    assert !(user.authenticate("xxxxxx"))
+    assert !user.authenticate("xxxxxx")
   end
 end
