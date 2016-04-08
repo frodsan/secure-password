@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name        = "secure-password"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.summary     = "Securing your users' passwords"
   s.description = s.summary
   s.author      = "Francesco Rodríguez"
-  s.email       = "frodsan@protonmail.ch"
-  s.homepage    = "https://github.com/frodsan/secure-password"
+  s.email       = "hello@frodsan.com"
+  s.homepage    = "https://gitlab.com/frodsan/secure-password"
   s.license     = "MIT"
 
   s.files      = Dir["LICENSE", "README.md", "lib/**/*.rb"]
