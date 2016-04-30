@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "secure-password"
-  s.version     = "1.0.2"
+  s.version     = "1.1.0"
   s.summary     = "Securing your users' passwords"
   s.description = s.summary
   s.author      = "Francesco Rodríguez"

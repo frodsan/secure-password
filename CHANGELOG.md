@@ -1,4 +1,4 @@
-1.1.0 (unreleased)
+1.1.0 (30-04-2015)
 -----
 
 - Add `secure_password/testing` to set factor cost to the minimum.
