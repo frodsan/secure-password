@@ -80,7 +80,7 @@ Bcrypt's cost factor
 The default cost factor used by `BCrypt` is `10`. To change it, use:
 
 ```ruby
-BCrypt::Engine.cost = 12
+SecurePassword.cost = 12
 ```
 
 Check ["Cost Factors"][cost-factors] section for more information.
