@@ -93,7 +93,9 @@ However, tests don't need this security measures. To speed up your tests,
 you can decrease the default cost factor to the minimum:
 
 ```ruby
-BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
+require "secure_password/testing"
+
+SecurePassword.cost # => 4
 ```
 
 Contributing

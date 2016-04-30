@@ -5,14 +5,13 @@ require "minitest/autorun"
 require "minitest/pride"
 require "minitest/sugar"
 require_relative "../lib/secure_password"
+require_relative "../lib/secure_password/testing"
 
 class User
   include SecurePassword
 
   attr_accessor :password_digest
 end
-
-BCrypt::Engine.cost = BCrypt::Engine::MIN_COST
 
 class SecurePasswordTest < Minitest::Test
   test "sets hashed password" do
