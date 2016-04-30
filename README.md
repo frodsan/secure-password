@@ -1,4 +1,4 @@
-secure-password
+secure-password [![Build Status](https://travis-ci.org/frodsan/secure-password.svg)](https://travis-ci.org/frodsan/secure-password)
 ===============
 
 Set and authenticate against [bcrypt][bcrypt] passwords.
