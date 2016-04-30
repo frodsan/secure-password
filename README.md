@@ -1,4 +1,4 @@
-secure-password [![Build Status](https://gitlab.com/frodsan/secure-password/badges/master/build.svg)](https://gitlab.com/frodsan/secure-password/builds)
+secure-password
 ===============
 
 Set and authenticate against [bcrypt][bcrypt] passwords.
@@ -102,7 +102,7 @@ Contributing
 Fork the project with:
 
 ```
-$ git clone git@gitlab.com:frodsan/secure-password.git
+$ git clone git@github.com:frodsan/secure-password.git
 ```
 
 To install dependencies, use:
@@ -117,7 +117,7 @@ To run the test suite, do:
 $ rake test
 ```
 
-For bug reports and pull requests use [GitLab][issues].
+For bug reports and pull requests use [GitHub][issues].
 
 License
 -------
@@ -128,5 +128,5 @@ SecurePassword is released under the [MIT License][mit].
 [bcrypt-ruby]: https://github.com/codahale/bcrypt-ruby
 [cost-factors]: https://github.com/codahale/bcrypt-ruby#cost-factors
 [mit]: http://www.opensource.org/licenses/MIT
-[issues]: https://gitlab.com/frodsan/secure-password/issues
+[issues]: https://github.com/frodsan/secure-password/issues
 [scrivener]: https://github.com/soveran/scrivener
